@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Search Results
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+                <th>Depth</th>
+                <th>Mag</th>
+                <th>Place</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+            <tr>
+                <td>{{ row["time"] }}</td>
+                <td>{{ row["latitude"] }}</td>
+                <td>{{ row["longitude"] }}</td>
+                <td>{{ row["depth"] }}</td>
+                <td>{{ row["mag"] }}</td>
+                <td>{{ row["place"] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

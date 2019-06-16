@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Search by Location
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('searchlocation') }}" method="post">
+        <fieldset>
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="latitude" placeholder="Latitude" type="search" required/>
+            </div>
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="longitude" placeholder="Longitude" type="search" required/>
+            </div>
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="radius" placeholder="Distance" type="search" required/>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default" type="submit">Search</button>
+            </div>
+        </fieldset>
+    </form>
+{% endblock %}
