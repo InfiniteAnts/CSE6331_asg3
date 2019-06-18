@@ -16,7 +16,7 @@
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-        <title>Assignment 2 {% block title %}{% endblock %}</title>
+        <title>Assignment 3 {% block title %}{% endblock %}</title>
 
     </head>
 
@@ -33,16 +33,12 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="{{ url_for('index') }}"><span class="yellow">Assignment 2: Anant Ahuja - 1001569357</span></a>
+                        <a class="navbar-brand" href="{{ url_for('index') }}"><span class="yellow">Assignment 3: Anant Ahuja - 1001569357</span></a>
                     </div>
                     <div class="collapse navbar-collapse" id="navbar">
                             <ul class="nav navbar-nav">
                                 <li><a href="{{ url_for('searchmag') }}">Search by Magnitude</a></li>
-                                <li><a href="{{ url_for('searchmagdate') }}">Search by Magnitude and Date</a></li>
-                                <li><a href="{{ url_for('searchlocation') }}">Search by Location</a></li>
-                                <li><a href="{{ url_for('searchtime') }}">Search by Local Time</a></li>
-                                <li><a href="{{ url_for('cluster') }}">Cluster</a></li>
-                            </ul>
+                                <li><a href="{{ url_for('searchdepth') }}">Search by Depth</a></li>
                     </div>
                 </div>
             </nav>

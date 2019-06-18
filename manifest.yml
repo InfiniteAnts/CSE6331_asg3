@@ -1,5 +1,0 @@
----
-applications:
- - name: asg2AnantAhuja
-   random-route: true
-   memory: 256M
